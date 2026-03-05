@@ -6,7 +6,7 @@
   <p>
     <a href="#türkçe">Türkçe</a> • 
     <a href="#english">English</a> • 
-    <a href="https://nevresoglu.net/tr/snipfor">Website</a>
+    <a href="https://snipfor.com">Website</a>
   </p>
 </div>
 
@@ -57,8 +57,9 @@
 -   **OS Support**: Windows 10 / 11 (64-bit)
 
 ---
-<div align="center">
-  <p>Developed with ❤️ by <b>Mehmet Nevresoğlu</b></p>
-  <p><a href="mailto:mehmet@nevresoglu.net">Contact</a> | <a href="https://github.com/mnevres/snipfor">Repository</a></p>
-</div>
 
+<div align="center">
+  <p><b>Official Website:</b> <a href="https://snipfor.com">snipfor.com</a></p>
+  <p>Developed with ❤️ by <a href="https://nevresoglu.net">Mehmet Nevresoğlu</a></p>
+  <p><a href="mailto:mehmet@nevresoglu.net">Support</a> | <a href="https://github.com/mnevres/SnipFor">GitHub Repository</a></p>
+</div>
