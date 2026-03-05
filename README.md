@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="assets/icons/snipfor.png" width="120" height="120" alt="SnipFor Logo">
+  <img src="snipfor.png" width="120" height="120" alt="SnipFor Logo">
   <h1>SnipFor v2.1.0 🚀</h1>
   <p><b>100% Offline Screen Capture & OCR Tool</b></p>
   
@@ -61,3 +61,4 @@
   <p>Developed with ❤️ by <b>Mehmet Nevresoğlu</b></p>
   <p><a href="mailto:mehmet@nevresoglu.net">Contact</a> | <a href="https://github.com/mnevres/snipfor">Repository</a></p>
 </div>
+
