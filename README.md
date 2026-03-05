@@ -59,7 +59,7 @@
 ---
 
 <div align="center">
-  <p><b>Official Website:</b> <a href="https://snipfor.com">snipfor.com</a></p>
+  <p><b>Official Website:</b> <a href="http://snipfor.com">snipfor.com</a></p>
   <p>Developed with ❤️ by <a href="https://nevresoglu.net">Mehmet Nevresoğlu</a></p>
   <p><a href="mailto:mehmet@nevresoglu.net">Support</a> | <a href="https://github.com/mnevres/SnipFor">GitHub Repository</a></p>
 </div>
