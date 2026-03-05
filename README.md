@@ -6,7 +6,7 @@
   <p>
     <a href="#türkçe">Türkçe</a> • 
     <a href="#english">English</a> • 
-    <a href="https://snipfor.com">Website</a>
+    <a href="http://snipfor.com">Website</a>
   </p>
 </div>
 
