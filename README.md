@@ -14,7 +14,7 @@
     <a href="https://snipfor.com">Official Website</a>
   </p>
 
-  <img src="gifs/OCR.gif" width="800" alt="SnipFor OCR Demo">
+  <img src="SnipFor.gif" width="800" alt="SnipFor OCR Demo">
 </div>
 
 ---
@@ -82,3 +82,4 @@
   <p>Developed with ❤️ by <a href="https://nevresoglu.net">Mehmet Nevresoğlu</a></p>
   <p><a href="mailto:mehmet@nevresoglu.net">Technical Support</a> | <a href="https://github.com/mnevres/SnipFor">GitHub Org</a></p>
 </div>
+
