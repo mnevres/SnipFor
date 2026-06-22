@@ -1,0 +1,89 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+build/
+dist/
+output/
+
+# Local settings
+settings.json
+
+# Enterprise / Audit artifacts
+enterprise_lock
+SnipFor_Audit_Policies.reg
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OCR logs / temp
+*.log
+tesseract/
+
+# Generated / Virtual environments
+resources_rc.py
+venv/
+.venv/
+
+# Backup & legacy files
+_backup/
+
+# Dev test scripts
+test_audio.py
+test_collect.py
+test_cv2.py
+test_imports.py
+test_lang.py
+test_player.py
+test_out.txt
+test_video.mp4
+test_enterprise_policies.reg
+test_obf/
+
+# Debug / diagnostic utilities
+debug_registry.py
+diagnostic.py
+force_fix_converter.py
+wipe_snipfor_registry.py
+
+# Old spec backups
+SnipFor.spec.new
+SnipFor.spec.new.v2
+SnipFor.spec.updated
+SnipFor_noarmor.spec
+SnipFor_noarmor.spec.new
+SnipFor_noarmor.spec.spec
+
+# Legacy UI files
+ui_overlay_clean.py
+ui_video_home_legacy_green.py
+ui_toolbar.py.bak
+
+# Build outputs / temp
+error_output.txt
+iscc_output.txt
+iscc_output_latest.txt
+pyarmor.bug.log
+installer_components.txt
+autodetect_desktop.png
+
+# Broken / experimental code
+SnipForImage/core/image_processor_broken.py
+SnipForImage/core/image_processor_fast.py
+
+# Large binary files
+*.dll
+*.exe
+assets/ffmpeg.exe
+*.7z
+*.mp4
+*.png
+*.ico
+
+# Start error logs
+start error logs/
