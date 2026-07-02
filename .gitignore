@@ -44,6 +44,11 @@ test_out.txt
 test_video.mp4
 test_enterprise_policies.reg
 test_obf/
+test_hotkey.py
+hotkey_test.ps1
+persistent_test.ps1
+test_community.ps1
+build_log.txt
 
 # Debug / diagnostic utilities
 debug_registry.py
