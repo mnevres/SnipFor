@@ -1,4 +1,26 @@
 User-agent: *
 Allow: /
 
+# AI crawlers / answer engines - explicitly allowed
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: BingBot
+Allow: /
+
 Sitemap: https://snipfor.com/sitemap.xml

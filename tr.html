@@ -44,18 +44,76 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
-      "name": "SnipFor",
-      "operatingSystem": "Windows 10, Windows 11",
-      "applicationCategory": "ProductivityApplication",
-      "offers": {
-        "@type": "Offer",
-        "price": "0.00",
-        "priceCurrency": "USD"
-      },
-      "description": "Gömülü Tesseract motoru kullanan %100 çevrimdışı, gizlilik odaklı ekran yakalama ve OCR aracı.",
-      "downloadUrl": "https://github.com/mnevres/SnipFor/releases/latest",
-      "featureList": "Çevrimdışı OCR, Ekran Sabitleme, Profesyonel Notlar, Sıfır Veri Sızıntısı"
+      "@graph": [
+        {
+          "@type": "SoftwareApplication",
+          "name": "SnipFor",
+          "operatingSystem": "Windows 10, Windows 11",
+          "applicationCategory": "ProductivityApplication",
+          "softwareVersion": "2.2.2",
+          "url": "https://snipfor.com",
+          "sameAs": "https://github.com/mnevres/SnipFor",
+          "offers": {
+            "@type": "Offer",
+            "price": "0.00",
+            "priceCurrency": "USD"
+          },
+          "description": "Gömülü Tesseract motoru kullanan %100 çevrimdışı, gizlilik odaklı ekran yakalama ve OCR aracı.",
+          "downloadUrl": "https://github.com/mnevres/SnipFor/releases/latest",
+          "featureList": "Çevrimdışı OCR, Ekran Sabitleme, Profesyonel Notlar, Sıfır Veri Sızıntısı",
+          "review": [
+            {
+              "@type": "Review",
+              "author": { "@type": "Organization", "name": "Softpedia" },
+              "reviewRating": { "@type": "Rating", "ratingValue": "4.5", "bestRating": "5" },
+              "url": "https://www.softpedia.com/get/Multimedia/Graphic/Graphic-Capture/SnipFor.shtml"
+            },
+            {
+              "@type": "Review",
+              "author": { "@type": "Organization", "name": "MajorGeeks" },
+              "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+              "url": "https://www.majorgeeks.com/files/details/snipfor.html"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "SnipFor gerçekten ücretsiz mi?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Evet. Community Edition ücretsizdir ve çevrimdışı OCR, çizim/not araçları, ekran sabitleme ve otomatik artan numaralandırma araçlarını içerir. Pro sürümü video kaydı ekler; Audit ise kurumsal/uyumluluk ekipleri için ticari bir sürümdür."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "SnipFor ekran görüntülerimi veya çıkardığı metni buluta gönderiyor mu?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Hayır. SnipFor'un OCR motoru (gömülü Tesseract) tamamen cihazınızda çalışır. Ekran içeriği ve çıkarılan metin bilgisayarınızdan asla ayrılmaz, hiçbir bulut sunucusu devreye girmez."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "SnipFor hangi platformları destekliyor?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "SnipFor şu anda Windows 10 ve Windows 11'i hedefliyor."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "SnipFor, ShareX veya Snagit'ten farkı nedir?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "SnipFor, OCR'ı sonradan eklenmiş bir özellik değil, temel bir yetenek olarak ele alır ve her şeyi 'Sıfır Veri Sızıntısı' ilkesiyle yerel olarak işler — bu, ekran içeriğini hiçbir yere göndermeyi göze alamayan kullanıcılar ve kurumlar için önemlidir."
+              }
+            }
+          ]
+        }
+      ]
     }
     </script>
 
@@ -106,6 +164,24 @@
             <div class="demo-box">
                 <video src="SnipFor.mp4" autoplay loop muted playsinline
                     aria-label="SnipFor OCR Demo"></video>
+            </div>
+
+            <div class="press-strip">
+                <p class="press-label">İnceleyenler</p>
+                <div class="press-badges">
+                    <a href="https://www.softpedia.com/get/Multimedia/Graphic/Graphic-Capture/SnipFor.shtml"
+                        target="_blank" rel="noopener" class="press-item">
+                        <span class="press-rating">4.5/5</span> Softpedia
+                    </a>
+                    <a href="https://www.majorgeeks.com/files/details/snipfor.html" target="_blank" rel="noopener"
+                        class="press-item">
+                        <span class="press-rating">5/5</span> MajorGeeks
+                    </a>
+                    <a href="https://trishtech.com/2026/07/snipfor-a-privacy-first-screen-capture-and-ocr-tool/"
+                        target="_blank" rel="noopener" class="press-item">TrishTech</a>
+                    <a href="https://alternativeto.net/software/snipfor/" target="_blank" rel="noopener"
+                        class="press-item">AlternativeTo</a>
+                </div>
             </div>
         </section>
 

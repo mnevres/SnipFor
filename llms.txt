@@ -1,0 +1,30 @@
+# SnipFor
+
+> SnipFor is a fast, lightweight screen capture and OCR tool for Windows, built around a "Zero Data Leak" principle: screen content and extracted text never leave the user's computer. No cloud processing, no data upload.
+
+## What it does
+
+- Capture a selected area, a window, or the full screen (pixel-precise selection, multi-monitor and 4K DPI support).
+- Extract text from anything on screen (a paused video, a remote desktop session, a PDF that doesn't allow copy-paste) using a fully local, embedded Tesseract OCR engine.
+- Annotate captures instantly: arrows, highlighter, shapes, text, auto-incrementing numbered stamps, blur/pixelate for sensitive data.
+- Pin captured snippets on top of other windows for quick reference.
+- Undo/redo up to 30 steps, color picker, clipboard sync (PNG/BMP).
+
+## Editions
+
+- **Community** (free): core capture, annotation, local OCR, screen pinning.
+- **Pro**: adds video recording. Purchase/upgrade info at https://snipfor.com
+- **Audit**: commercial edition for enterprise/compliance teams (MSI installer, code hardening, enterprise deployment). Not publicly listed; contact mehmet@nevresoglu.net.
+
+## Links
+
+- Homepage: https://snipfor.com
+- Source code / releases: https://github.com/mnevres/SnipFor
+- Developer: Mehmet Nevresoğlu — https://nevresoglu.net
+
+## Third-party reviews
+
+- Softpedia (4.5/5): https://www.softpedia.com/get/Multimedia/Graphic/Graphic-Capture/SnipFor.shtml
+- MajorGeeks (5/5): https://www.majorgeeks.com/files/details/snipfor.html
+- TrishTech: https://trishtech.com/2026/07/snipfor-a-privacy-first-screen-capture-and-ocr-tool/
+- AlternativeTo: https://alternativeto.net/software/snipfor/
