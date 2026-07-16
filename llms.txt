@@ -27,4 +27,4 @@
 - Softpedia (4.5/5): https://www.softpedia.com/get/Multimedia/Graphic/Graphic-Capture/SnipFor.shtml
 - MajorGeeks (5/5): https://www.majorgeeks.com/files/details/snipfor.html
 - TrishTech: https://trishtech.com/2026/07/snipfor-a-privacy-first-screen-capture-and-ocr-tool/
-- AlternativeTo: https://alternativeto.net/software/snipfor/
+- AlternativeTo: https://alternativeto.net/software/snipfor/about/
