@@ -1,6 +1,6 @@
 <div align="center">
   <img src="snipfor.png" width="120" height="120" alt="SnipFor Logo">
-  <h1>SnipFor 🚀</h1>
+  <h1>SnipFor</h1>
   <p><b>High-Performance, Privacy-First Screen Capture & OCR</b></p>
 
   [![License: Proprietary](https://img.shields.io/badge/License-Community%20%26%20Audit-blue.svg)](LICENSE)
