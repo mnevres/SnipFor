@@ -76,6 +76,7 @@ nav {
     font-size: 1.15rem;
     color: var(--text-primary);
     letter-spacing: -0.01em;
+    text-decoration: none;
 }
 
 .logo img {
@@ -155,9 +156,33 @@ nav {
 .hero-actions {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 1rem;
-    margin-bottom: 2.5rem;
+    margin-bottom: 1rem;
     flex-wrap: wrap;
+}
+
+ms-store-badge {
+    display: inline-block;
+}
+
+ms-store-badge::part(img) {
+    height: 52px !important;
+    width: auto !important;
+}
+
+.compare-link {
+    display: block;
+    text-align: center;
+    color: var(--text-tertiary);
+    font-size: 0.9rem;
+    text-decoration: none;
+    margin-bottom: 2.5rem;
+    transition: color 0.15s ease;
+}
+
+.compare-link:hover {
+    color: var(--text-secondary);
 }
 
 .press-strip {
