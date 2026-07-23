@@ -158,8 +158,21 @@
             <div class="hero-actions">
                 <ms-store-badge productid="9N60H3333SM9" productname="SnipFor" window-mode="full" theme="dark"
                     animation="on" language="tr"></ms-store-badge>
-                <a href="https://github.com/mnevres/SnipFor/releases/latest"
-                    class="btn btn-secondary download-link">Doğrudan İndir (.exe)</a>
+                <div class="download-dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" onclick="toggleDownloadDropdown(event)">
+                        Doğrudan İndir <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="dropdown-menu" id="downloadDropdownMenu">
+                        <a href="https://github.com/mnevres/SnipFor/releases/latest"
+                            class="dropdown-item download-link">
+                            <i class="fas fa-desktop"></i> Kurulum (.exe)
+                        </a>
+                        <a href="https://github.com/mnevres/SnipFor/releases/latest"
+                            class="dropdown-item download-link-portable">
+                            <i class="fas fa-box-archive"></i> Taşınabilir (.zip)
+                        </a>
+                    </div>
+                </div>
             </div>
             <a href="#editions" class="compare-link">Sürümleri Karşılaştır</a>
 
@@ -357,11 +370,16 @@
                 const response = await fetch('https://api.github.com/repos/mnevres/SnipFor/releases/latest');
                 const data = await response.json();
                 const exeAsset = data.assets.find(asset => asset.name.endsWith('.exe'));
+                const zipAsset = data.assets.find(asset => asset.name.endsWith('.zip'));
 
                 if (exeAsset) {
-                    const downloadLinks = document.querySelectorAll('.download-link');
-                    downloadLinks.forEach(link => {
+                    document.querySelectorAll('.download-link').forEach(link => {
                         link.href = exeAsset.browser_download_url;
+                    });
+                }
+                if (zipAsset) {
+                    document.querySelectorAll('.download-link-portable').forEach(link => {
+                        link.href = zipAsset.browser_download_url;
                     });
                 }
             } catch (error) {
@@ -369,6 +387,15 @@
             }
         }
         updateDownloadLinks();
+
+        function toggleDownloadDropdown(event) {
+            event.stopPropagation();
+            document.querySelector('.download-dropdown').classList.toggle('open');
+        }
+        document.addEventListener('click', () => {
+            const dd = document.querySelector('.download-dropdown');
+            if (dd) dd.classList.remove('open');
+        });
     </script>
     <script type="module" src="https://get.microsoft.com/badge/ms-store-badge.bundled.js"></script>
 </body>
