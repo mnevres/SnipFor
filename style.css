@@ -171,6 +171,66 @@ ms-store-badge::part(img) {
     width: auto !important;
 }
 
+.download-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-toggle {
+    cursor: pointer;
+}
+
+.dropdown-toggle i {
+    font-size: 0.75rem;
+    margin-left: 0.15rem;
+    transition: transform 0.15s ease;
+}
+
+.download-dropdown.open .dropdown-toggle i {
+    transform: rotate(180deg);
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: calc(100% + 0.5rem);
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 200px;
+    background: #10141f;
+    border: 1px solid var(--panel-border);
+    border-radius: 10px;
+    padding: 0.4rem;
+    box-shadow: 0 12px 28px -8px rgba(0, 0, 0, 0.5);
+    z-index: 20;
+}
+
+.download-dropdown.open .dropdown-menu {
+    display: block;
+}
+
+.dropdown-item {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.6rem 0.8rem;
+    border-radius: 6px;
+    color: var(--text-primary) !important;
+    text-decoration: none;
+    font-size: 0.9rem;
+    white-space: nowrap;
+}
+
+.dropdown-item:hover {
+    background: rgba(255, 255, 255, 0.06);
+}
+
+.dropdown-item i {
+    color: var(--text-tertiary);
+    width: 1rem;
+    text-align: center;
+}
+
 .compare-link {
     display: block;
     text-align: center;
