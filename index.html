@@ -158,8 +158,21 @@
             <div class="hero-actions">
                 <ms-store-badge productid="9N60H3333SM9" productname="SnipFor" window-mode="full" theme="dark"
                     animation="on" language="en"></ms-store-badge>
-                <a href="https://github.com/mnevres/SnipFor/releases/latest"
-                    class="btn btn-secondary download-link">Direct Download (.exe)</a>
+                <div class="download-dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" onclick="toggleDownloadDropdown(event)">
+                        Direct Download <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="dropdown-menu" id="downloadDropdownMenu">
+                        <a href="https://github.com/mnevres/SnipFor/releases/latest"
+                            class="dropdown-item download-link">
+                            <i class="fas fa-desktop"></i> Installer (.exe)
+                        </a>
+                        <a href="https://github.com/mnevres/SnipFor/releases/latest"
+                            class="dropdown-item download-link-portable">
+                            <i class="fas fa-box-archive"></i> Portable (.zip)
+                        </a>
+                    </div>
+                </div>
             </div>
             <a href="#editions" class="compare-link">Compare Editions</a>
 
@@ -355,19 +368,34 @@
                 const data = await response.json();
                 // Find the first .exe asset
                 const exeAsset = data.assets.find(asset => asset.name.endsWith('.exe'));
+                const zipAsset = data.assets.find(asset => asset.name.endsWith('.zip'));
 
                 if (exeAsset) {
-                    const downloadLinks = document.querySelectorAll('.download-link');
-                    downloadLinks.forEach(link => {
+                    document.querySelectorAll('.download-link').forEach(link => {
                         link.href = exeAsset.browser_download_url;
                     });
                     console.log('Download links updated to:', exeAsset.browser_download_url);
+                }
+                if (zipAsset) {
+                    document.querySelectorAll('.download-link-portable').forEach(link => {
+                        link.href = zipAsset.browser_download_url;
+                    });
+                    console.log('Portable download link updated to:', zipAsset.browser_download_url);
                 }
             } catch (error) {
                 console.error('Error fetching latest release:', error);
             }
         }
         updateDownloadLinks();
+
+        function toggleDownloadDropdown(event) {
+            event.stopPropagation();
+            document.querySelector('.download-dropdown').classList.toggle('open');
+        }
+        document.addEventListener('click', () => {
+            const dd = document.querySelector('.download-dropdown');
+            if (dd) dd.classList.remove('open');
+        });
     </script>
     <script type="module" src="https://get.microsoft.com/badge/ms-store-badge.bundled.js"></script>
 </body>
