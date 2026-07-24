@@ -53,16 +53,17 @@
 
 ## 💎 Edition Comparison
 
-| Feature | Community Edition | Audit Edition (Enterprise) |
-| :--- | :---: | :---: |
-| **Privacy & Offline OCR** | ✅ | ✅ |
-| **Drawing & Annotations** | ✅ | ✅ |
-| **Pin to Screen** | ✅ | ✅ |
-| **Auto-Increment Stamps** | ✅ | ✅ |
-| **MSI Installer Support** | ❌ | ✅ |
-| **Code Obfuscation (Hardened)**| ❌ | ✅ |
-| **Enterprise Deployment Tools**| ❌ | ✅ |
-| **Commercial License** | ❌ | ✅ |
+| Feature | Community Edition | Pro Edition | Audit Edition (Enterprise) |
+| :--- | :---: | :---: | :---: |
+| **Capture & Edit Tools** | ✅ | ✅ | ✅ |
+| **Unlimited Local OCR** | ✅ | ✅ | ✅ |
+| **Video & GIF Recording** | ❌ | ✅ | ✅ |
+| **Format Conversion (15+ formats)** | ❌ | ✅ | ✅ |
+| **Full Image Editor** | ❌ | ✅ | ✅ |
+| **MSI & Silent Deployment** | ❌ | ❌ | ✅ |
+| **IT Policies & Restrictions** | ❌ | ❌ | ✅ |
+| **Source Code Obfuscation** | ❌ | ❌ | ✅ |
+| **Priority Support** | ❌ | ❌ | ✅ |
 
 > [!NOTE]
 > **Audit Edition** is currently available for selected enterprise partners and corporate environments. For licensing inquiries, bulk deployment needs, or private access, please contact: [mehmet@nevresoglu.net](mailto:mehmet@nevresoglu.net)
