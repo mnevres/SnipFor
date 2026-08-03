@@ -7,6 +7,7 @@ __pycache__/
 build/
 dist/
 output/
+build_msix_staging/
 
 # Local settings
 settings.json
@@ -14,6 +15,12 @@ settings.json
 # Enterprise / Audit artifacts
 enterprise_lock
 SnipFor_Audit_Policies.reg
+
+# Lisans sırrı ve geliştirici-only keygen araçları — PUBLIC repo'ya
+# ASLA gitmemeli (bkz. config.py'nin license_secret importu).
+license_secret.py
+generate_license_key.py
+license_key_generator_gui.py
 
 # IDEs
 .vscode/
