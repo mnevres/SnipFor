@@ -87,6 +87,95 @@ autodetect_desktop.png
 # Broken / experimental code
 SnipForImage/core/image_processor_broken.py
 SnipForImage/core/image_processor_fast.py
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+build/
+dist/
+output/
+build_msix_staging/
+
+# Local settings
+settings.json
+
+# Enterprise / Audit artifacts
+enterprise_lock
+SnipFor_Audit_Policies.reg
+
+# Lisans sırrı ve geliştirici-only keygen araçları — PUBLIC repo'ya
+# ASLA gitmemeli (bkz. config.py'nin license_secret importu).
+license_secret.py
+generate_license_key.py
+license_key_generator_gui.py
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OCR logs / temp
+*.log
+tesseract/
+
+# Generated / Virtual environments
+resources_rc.py
+venv/
+.venv/
+
+# Backup & legacy files
+_backup/
+
+# Dev test scripts
+test_audio.py
+test_collect.py
+test_cv2.py
+test_imports.py
+test_lang.py
+test_player.py
+test_out.txt
+test_video.mp4
+test_enterprise_policies.reg
+test_obf/
+test_hotkey.py
+hotkey_test.ps1
+persistent_test.ps1
+test_community.ps1
+build_log.txt
+
+# Debug / diagnostic utilities
+debug_registry.py
+diagnostic.py
+force_fix_converter.py
+wipe_snipfor_registry.py
+
+# Old spec backups
+SnipFor.spec.new
+SnipFor.spec.new.v2
+SnipFor.spec.updated
+SnipFor_noarmor.spec
+SnipFor_noarmor.spec.new
+SnipFor_noarmor.spec.spec
+
+# Legacy UI files
+ui_overlay_clean.py
+ui_video_home_legacy_green.py
+ui_toolbar.py.bak
+
+# Build outputs / temp
+error_output.txt
+iscc_output.txt
+iscc_output_latest.txt
+pyarmor.bug.log
+installer_components.txt
+autodetect_desktop.png
+
+# Broken / experimental code
+SnipForImage/core/image_processor_broken.py
+SnipForImage/core/image_processor_fast.py
 
 # Large binary files
 *.dll
@@ -96,6 +185,52 @@ assets/ffmpeg.exe
 *.mp4
 *.png
 *.ico
+!videos/
+!videos/**
 
 # Start error logs
 start error logs/
+
+# ---------------------------------------------------------------------------
+# PUBLIC REPOSITORY SAFETY FENCE
+# ---------------------------------------------------------------------------
+# This Git repository points to the PUBLIC snipfor.com/web-download repository.
+# SnipFor application source must NEVER be committed or pushed from here.
+# Source versioning belongs in a separate PRIVATE repository.
+#
+# Tracked website/media files remain tracked even when broad rules are added
+# below. The rules prevent an accidental `git add .` from collecting application
+# sources that currently share this working directory with the public website.
+
+# Python application source and tests
+*.py
+*.pyw
+*.pyi
+*.qrc
+SnipForImage/
+SnipForImageViewer/
+tests/
+lang/
+
+# Build, installer and enterprise source definitions
+*.spec
+*.iss
+*.wxs
+*.wxi
+*.reg
+*.ps1
+installer-msix/
+assets/
+dev_tools/
+
+# Private architecture, product and internal project documentation
+docs/
+AGENTS.md
+PROJE_*.md
+SNIPFOR_PROJE_OZETI.md
+SnipFor_Ozellikler.md
+Implementation Plan.md
+
+# Local source-repository migration and safety metadata
+repository-policy.toml
+.private-repo-confirmed

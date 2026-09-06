@@ -1,5 +1,6 @@
 User-agent: *
 Allow: /
+Disallow: /_backup_*
 
 # AI crawlers / answer engines - explicitly allowed
 User-agent: GPTBot

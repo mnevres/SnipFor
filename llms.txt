@@ -1,30 +1,102 @@
 # SnipFor
 
-> SnipFor is a fast, lightweight screen capture and OCR tool for Windows, built around a "Zero Data Leak" principle: screen content and extracted text never leave the user's computer. No cloud processing, no data upload.
+> SnipFor is a fast, lightweight, privacy-first screen capture, local OCR, annotation, and screen recording tool for Windows (10 and 11, 64-bit). Built around a strict "Zero Data Leak" architecture: all image processing, text extraction, and video recording happen 100% locally on device. No telemetry, no cloud dependencies, no accounts required.
 
-## What it does
+Current Version: v2.6.9
 
-- Capture a selected area, a window, or the full screen (pixel-precise selection, multi-monitor and 4K DPI support).
-- Extract text from anything on screen (a paused video, a remote desktop session, a PDF that doesn't allow copy-paste) using a fully local, embedded Tesseract OCR engine.
-- Annotate captures instantly: arrows, highlighter, shapes, text, auto-incrementing numbered stamps, blur/pixelate for sensitive data.
-- Pin captured snippets on top of other windows for quick reference.
-- Undo/redo up to 30 steps, color picker, clipboard sync (PNG/BMP).
+## Core Philosophy: Privacy & Zero Data Leak
+- **100% Offline Processing**: Optical Character Recognition (OCR) and annotations never transmit data over the network.
+- **Enterprise-Safe**: Suitable for healthcare, legal, finance, and engineering workflows handling confidential credentials, PII, or internal documents.
+- **Lightweight & Native Performance**: Instant hotkey triggering, high-DPI scaling across multi-monitor setups, and minimal system resource footprint.
 
-## Editions
+## Key Features & Capabilities
 
-- **Community** (free): core capture, annotation, local OCR, screen pinning.
-- **Pro**: adds video recording. Purchase/upgrade info at https://snipfor.com
-- **Audit**: commercial edition for enterprise/compliance teams (MSI installer, code hardening, enterprise deployment). Not publicly listed; contact mehmet@nevresoglu.net.
+### 1. Smart Capture (Intelligent UI Snapping)
+- Automatic edge and UI element detection (windows, buttons, toolbars, dialogs) with sub-pixel magnetic snapping.
+- Multi-monitor support across mixed DPI and refresh rates.
+- Shortcut: PrintScreen or customizable hotkeys.
+- Video Guide: https://www.youtube.com/watch?v=OXdQYAXItvI
 
-## Links
+### 2. Embedded Local OCR (Text Extraction)
+- Fully offline optical character recognition powered by an embedded engine.
+- Instantly grab non-selectable text from images, locked PDFs, remote desktop sessions (RDP/VNC), error dialogs, or video streams directly to clipboard.
+- Shortcut: `Ctrl+T` or OCR button in toolbar.
+- Video Guide: https://www.youtube.com/watch?v=YuRTGu9kRRM
 
-- Homepage: https://snipfor.com
-- Source code / releases: https://github.com/mnevres/SnipFor
-- Developer: Mehmet Nevresoğlu — https://nevresoglu.net
+### 3. Pin to Screen (Float on Top)
+- Pin any captured snippet or region as a frameless, always-on-top floating window.
+- Reposition, resize, or adjust transparency while continuing work in other applications.
+- Shortcut: `P` or Pin button.
+- Video Guide: https://www.youtube.com/watch?v=zq8oMEcLa10
 
-## Third-party reviews
+### 4. Privacy Blur & Pixelate Masking
+- Instantly redact API keys, passwords, personal customer data, emails, and sensitive UI elements.
+- Dual masking modes: Gaussian blur or mosaic pixelation with adjustable intensity.
+- Shortcut: `B`
+- Video Guide: https://www.youtube.com/watch?v=L2eR_Uvdxqo
 
-- Softpedia (4.5/5): https://www.softpedia.com/get/Multimedia/Graphic/Graphic-Capture/SnipFor.shtml
-- MajorGeeks (5/5): https://www.majorgeeks.com/files/details/snipfor.html
-- TrishTech: https://trishtech.com/2026/07/snipfor-a-privacy-first-screen-capture-and-ocr-tool/
-- AlternativeTo: https://alternativeto.net/software/snipfor/about/
+### 5. Step Numbering & Sequence Stamps
+- Auto-incrementing numbered badge stamps (1, 2, 3...) designed for creating technical tutorials, bug reports, and step-by-step documentation in seconds.
+- Shortcut: `S`
+- Video Guide: https://www.youtube.com/watch?v=AQLsXJ42mXA
+
+### 6. Precision Drawing & Annotations
+- Vector arrows, rectangles, ellipses, callout badges, freehand pen, and semi-transparent highlighters.
+- Full 30-step undo/redo buffer (`Ctrl+Z`, `Ctrl+Y`).
+- Video Guide: https://www.youtube.com/watch?v=-jxY8GqkiFo
+
+### 7. Color Picker & Pixel Magnifier
+- High-precision screen loupe magnifier showing individual pixels and grid coordinates.
+- Copy colors in HEX (`#FFFFFF`), RGB (`rgb(255,255,255)`), or HSV formats directly to clipboard with a single click.
+- Shortcut: `C`
+- Video Guide: https://www.youtube.com/watch?v=aAkrnHaxqso
+
+### 8. Rich Typography & Text Annotations
+- Inline editable text boxes with typography customization, contrast backgrounds, and customizable sizing.
+- Shortcut: `T`
+- Video Guide: https://www.youtube.com/watch?v=h94a5fUZPRQ
+
+### 9. Screen Video Recorder (SnipFor Pro)
+- High-definition screen recording at up to 60 FPS (MP4 / GIF output).
+- Area selection, active window capture, and multi-display recording with clear system audio capture.
+- Lightweight encoder with zero background impact.
+
+## Editions & Licensing
+
+- **Community Edition** (Free & Open Source / GPLv3):
+  - Full screenshot capture suite, multi-monitor support.
+  - Complete annotation toolkit (arrows, shapes, text, stamps, blur).
+  - 100% offline Local OCR engine.
+  - Pin-to-screen floating widgets.
+  - Free forever, no registration, no advertisements.
+
+- **Pro Edition**:
+  - Adds HD Screen Video & GIF Recording (60 FPS, multi-monitor, window audio capture).
+  - Lifetime license with automatic updates.
+  - Available at https://snipfor.com
+
+- **Audit & Enterprise Edition**:
+  - Custom commercial distribution for corporate compliance, MSI packaging, locked configurations, and air-gapped deployments.
+  - Contact: mehmet@nevresoglu.net
+
+## Official Video Showcase & Tutorials
+- Smart Capture Demo: https://www.youtube.com/watch?v=OXdQYAXItvI
+- Offline OCR Demo: https://www.youtube.com/watch?v=YuRTGu9kRRM
+- Pin to Screen Demo: https://www.youtube.com/watch?v=zq8oMEcLa10
+- Privacy Blur Demo: https://www.youtube.com/watch?v=L2eR_Uvdxqo
+- Step Sequence Stamps Demo: https://www.youtube.com/watch?v=AQLsXJ42mXA
+- Shapes & Highlighting Demo: https://www.youtube.com/watch?v=-jxY8GqkiFo
+- Color Picker & Magnifier Demo: https://www.youtube.com/watch?v=aAkrnHaxqso
+- Text Tool Demo: https://www.youtube.com/watch?v=h94a5fUZPRQ
+
+## Official Links & Resources
+- Website: https://snipfor.com
+- Turkish Website: https://snipfor.com/tr.html
+- GitHub Repository: https://github.com/mnevres/SnipFor
+- Developer: Mehmet Nevresoğlu (https://nevresoglu.net)
+
+## Verified Third-Party Reviews & Awards
+- Softpedia (4.5 / 5 Stars): https://www.softpedia.com/get/Multimedia/Graphic/Graphic-Capture/SnipFor.shtml
+- MajorGeeks (5 / 5 Stars): https://www.majorgeeks.com/files/details/snipfor.html
+- TrishTech Editorial Review: https://trishtech.com/2026/07/snipfor-a-privacy-first-screen-capture-and-ocr-tool/
+- AlternativeTo Directory: https://alternativeto.net/software/snipfor/about/
