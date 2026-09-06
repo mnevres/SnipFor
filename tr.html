@@ -184,6 +184,15 @@
           "uploadDate": "2026-09-06T12:00:00+03:00",
           "contentUrl": "https://www.youtube.com/watch?v=AQLsXJ42mXA",
           "embedUrl": "https://www.youtube-nocookie.com/embed/AQLsXJ42mXA"
+        },
+        {
+          "@type": "VideoObject",
+          "name": "SnipFor — Ultra Hızlı Görsel Görüntüleyici (Image Viewer)",
+          "description": "Windows Fotoğraflar'a hafif, hızlı ve modern alternatif: klasör önizleme şeridi, kenar gezinme okları ve kayıpsız yakınlaştırma.",
+          "thumbnailUrl": "https://img.youtube.com/vi/srcb56V-5ec/maxresdefault.jpg",
+          "uploadDate": "2026-09-07T00:00:00+03:00",
+          "contentUrl": "https://youtu.be/srcb56V-5ec",
+          "embedUrl": "https://www.youtube-nocookie.com/embed/srcb56V-5ec"
         }
       ]
     }
@@ -331,6 +340,9 @@
                     </button>
                     <button class="showcase-tab" data-target="panel-text" role="tab" aria-selected="false">
                         <i class="fas fa-i-cursor"></i> Hassas Metin
+                    </button>
+                    <button class="showcase-tab" data-target="panel-image-viewer" role="tab" aria-selected="false">
+                        <i class="fas fa-images"></i> Görsel Görüntüleyici
                     </button>
                 </div>
             </div>
@@ -624,6 +636,44 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Panel 9: Görsel Görüntüleyici -->
+            <div class="showcase-panel" id="panel-image-viewer">
+                <div class="showcase-media">
+                    <div class="showcase-thumb-facade" onclick="openVideoModal('srcb56V-5ec', 'Ultra Hızlı Görsel Görüntüleyici (Image Viewer)', 'snipfor_image_viewer_showcase.mp4')">
+                        <img src="videos/snipfor_image_viewer_showcase_poster.jpg" onerror="this.src='https://img.youtube.com/vi/srcb56V-5ec/hqdefault.jpg'" alt="Görsel Görüntüleyici Demosu" loading="lazy">
+                        <div class="play-badge-overlay">
+                            <div class="play-circle"><i class="fas fa-play"></i></div>
+                            <span class="play-text">Demoyu Oynat</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="showcase-info">
+                    <span class="showcase-badge">Tüm Sürümlerde Dahili &middot; Şimşek Hızında</span>
+                    <h3>Windows Fotoğraflar'a Hızlı, Modern ve Hafif Alternatif</h3>
+                    <p>Büyük boyutlu fotoğrafları beklemeden anında açın. Klasördeki tüm resimleri alt önizleme şeridinden tek tıkla gezin, kenar oklarıyla akıcı geçiş yapın ve fare tekerleğiyle kayıpsız yakınlaştırın.</p>
+                    <ul class="showcase-features-list">
+                        <li><i class="fas fa-check-circle"></i> Alt Klasör Şeridi: Bulunduğunuz klasördeki tüm görselleri alt panelde küçük resim olarak listeleyin</li>
+                        <li><i class="fas fa-check-circle"></i> Kenar Okları: Fareyi kenara yaklaştırdığınızda beliren akıcı oklarla önceki/sonraki görsele geçiş</li>
+                        <li><i class="fas fa-check-circle"></i> Geniş Format Desteği: PNG, JPG, JPEG, WEBP, BMP, GIF ve TIFF dosyalarını anında açar</li>
+                        <li><i class="fas fa-check-circle"></i> Güvenli Silme: Yanlışlıkla silmeleri önlemek için Windows Geri Dönüşüm Kutusu entegrasyonu</li>
+                    </ul>
+                    <div class="shortcut-group">
+                        <span class="shortcut-label">Kısayollar:</span>
+                        <span class="shortcut-pill"><kbd>← → / Tekerlek</kbd> Görseller Arası Geçiş</span>
+                        <span class="shortcut-pill"><kbd>Ctrl + Tekerlek</kbd> Kayıpsız Yakınlaştırma</span>
+                        <span class="shortcut-pill"><kbd>Delete</kbd> Geri Dönüşüm Kutusu'na Gönder</span>
+                    </div>
+                    <div class="showcase-actions">
+                        <button class="btn-watch-modal" onclick="openVideoModal('srcb56V-5ec', 'Ultra Hızlı Görsel Görüntüleyici (Image Viewer)', 'snipfor_image_viewer_showcase.mp4')">
+                            <i class="fas fa-play"></i> Tam Ekranda İzle
+                        </button>
+                        <a href="https://youtu.be/srcb56V-5ec" target="_blank" rel="noopener" class="btn-yt">
+                            <i class="fab fa-youtube"></i> YouTube'da İzle
+                        </a>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!-- ==================================================================
@@ -645,7 +695,7 @@
                     <i class="fas fa-images tool-icon" aria-hidden="true"></i>
                     <span class="tool-tier tool-shared">Tüm sürümler</span>
                     <h3>Görsel Görüntüleyici</h3>
-                    <p>Klasörlere hızla göz atın; iş akışınızdan ayrılmadan yakınlaştırın, döndürün, kırpın ve inceleyin.</p>
+                    <p>Windows Fotoğraflar'a hafif ve anında açılan alternatif; alt klasör şeridi ve akıcı kenar oklarıyla fotoğrafları beklemeden gezin.</p>
                 </article>
                 <article class="tool-card">
                     <i class="fas fa-video tool-icon" aria-hidden="true"></i>
@@ -706,6 +756,7 @@
                     <ul>
                         <li>Çoklu monitör alan ve tam ekran yakalama</li>
                         <li>Akıllı pencere ve iç panel algılama</li>
+                        <li>Dahili Ultra Hızlı Görsel Görüntüleyici (Image Viewer)</li>
                         <li>Canlı büyüteç merceği ve gecikmeli yakalama</li>
                         <li>Eksiksiz notlandırma araçları — metin, oklar, şekiller, serbest çizim</li>
                         <li>Sıralı adımlama numaraları ve durum mühürleri</li>
@@ -756,6 +807,12 @@
                     <tbody>
                         <tr>
                             <td>Yakalama &amp; Düzenleme Araçları</td>
+                            <td><i class="fas fa-check check"></i></td>
+                            <td><i class="fas fa-check check"></i></td>
+                            <td><i class="fas fa-check check"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Ultra Hızlı Görsel Görüntüleyici (Image Viewer)</td>
                             <td><i class="fas fa-check check"></i></td>
                             <td><i class="fas fa-check check"></i></td>
                             <td><i class="fas fa-check check"></i></td>

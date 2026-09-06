@@ -184,6 +184,15 @@
           "uploadDate": "2026-09-06T12:00:00+03:00",
           "contentUrl": "https://www.youtube.com/watch?v=AQLsXJ42mXA",
           "embedUrl": "https://www.youtube-nocookie.com/embed/AQLsXJ42mXA"
+        },
+        {
+          "@type": "VideoObject",
+          "name": "SnipFor — Lightning Fast Image Viewer for Windows",
+          "description": "A lightweight, modern alternative to Windows Photos: thumbnail strip, edge navigation arrows, and lossless zoom.",
+          "thumbnailUrl": "https://img.youtube.com/vi/srcb56V-5ec/maxresdefault.jpg",
+          "uploadDate": "2026-09-07T00:00:00+03:00",
+          "contentUrl": "https://youtu.be/srcb56V-5ec",
+          "embedUrl": "https://www.youtube-nocookie.com/embed/srcb56V-5ec"
         }
       ]
     }
@@ -331,6 +340,9 @@
                     </button>
                     <button class="showcase-tab" data-target="panel-text" role="tab" aria-selected="false">
                         <i class="fas fa-i-cursor"></i> Precision Text
+                    </button>
+                    <button class="showcase-tab" data-target="panel-image-viewer" role="tab" aria-selected="false">
+                        <i class="fas fa-images"></i> Image Viewer
                     </button>
                 </div>
             </div>
@@ -624,6 +636,44 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Panel 9: Image Viewer -->
+            <div class="showcase-panel" id="panel-image-viewer">
+                <div class="showcase-media">
+                    <div class="showcase-thumb-facade" onclick="openVideoModal('srcb56V-5ec', 'Lightning Fast Image Viewer for Windows', 'snipfor_image_viewer_showcase.mp4')">
+                        <img src="videos/snipfor_image_viewer_showcase_poster.jpg" onerror="this.src='https://img.youtube.com/vi/srcb56V-5ec/hqdefault.jpg'" alt="Image Viewer Demo" loading="lazy">
+                        <div class="play-badge-overlay">
+                            <div class="play-circle"><i class="fas fa-play"></i></div>
+                            <span class="play-text">Play Demo</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="showcase-info">
+                    <span class="showcase-badge">Built-in Across All Editions &middot; Lightning Fast</span>
+                    <h3>A Fast, Sleek Alternative to Windows Photos</h3>
+                    <p>Open high-resolution images instantly without delays or splash screens. Browse your entire folder effortlessly via the bottom thumbnail strip and navigate with smooth edge arrows.</p>
+                    <ul class="showcase-features-list">
+                        <li><i class="fas fa-check-circle"></i> Thumbnail Strip: View and jump between all images in the active folder at the bottom dock</li>
+                        <li><i class="fas fa-check-circle"></i> Edge Navigation: Smooth hover arrows appear near screen borders for instant switching</li>
+                        <li><i class="fas fa-check-circle"></i> Broad Format Support: Opens PNG, JPG, JPEG, WEBP, BMP, GIF, and TIFF natively</li>
+                        <li><i class="fas fa-check-circle"></i> Safe File Deletion: Seamlessly integrated with the Windows Recycle Bin to prevent accidents</li>
+                    </ul>
+                    <div class="shortcut-group">
+                        <span class="shortcut-label">Shortcuts:</span>
+                        <span class="shortcut-pill"><kbd>← → / Wheel</kbd> Next / Previous Image</span>
+                        <span class="shortcut-pill"><kbd>Ctrl + Wheel</kbd> Lossless Zoom</span>
+                        <span class="shortcut-pill"><kbd>Delete</kbd> Send to Recycle Bin</span>
+                    </div>
+                    <div class="showcase-actions">
+                        <button class="btn-watch-modal" onclick="openVideoModal('srcb56V-5ec', 'Lightning Fast Image Viewer for Windows', 'snipfor_image_viewer_showcase.mp4')">
+                            <i class="fas fa-play"></i> Watch Fullscreen
+                        </button>
+                        <a href="https://youtu.be/srcb56V-5ec" target="_blank" rel="noopener" class="btn-yt">
+                            <i class="fab fa-youtube"></i> Watch on YouTube
+                        </a>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!-- ==================================================================
@@ -645,7 +695,7 @@
                     <i class="fas fa-images tool-icon" aria-hidden="true"></i>
                     <span class="tool-tier tool-shared">All editions</span>
                     <h3>Image Viewer</h3>
-                    <p>Browse folders quickly, zoom, rotate, crop and review images without leaving your workflow.</p>
+                    <p>A fast, sleek alternative to Windows Photos; browse folder thumbnails instantly, zoom losslessly and navigate effortlessly.</p>
                 </article>
                 <article class="tool-card">
                     <i class="fas fa-video tool-icon" aria-hidden="true"></i>
@@ -707,6 +757,7 @@
                     <ul>
                         <li>Multi-monitor region &amp; full-screen capture</li>
                         <li>Smart window &amp; inner element detection</li>
+                        <li>Built-in Ultra-Fast Image Viewer</li>
                         <li>Live magnifier lens and delayed capture</li>
                         <li>Full annotation toolkit — text, arrows, shapes, freehand</li>
                         <li>Numbered steps &amp; icon stamps with sequence memory</li>
@@ -758,6 +809,12 @@
                     <tbody>
                         <tr>
                             <td>Capture &amp; Edit Tools</td>
+                            <td><i class="fas fa-check check"></i></td>
+                            <td><i class="fas fa-check check"></i></td>
+                            <td><i class="fas fa-check check"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Lightning Fast Image Viewer</td>
                             <td><i class="fas fa-check check"></i></td>
                             <td><i class="fas fa-check check"></i></td>
                             <td><i class="fas fa-check check"></i></td>
