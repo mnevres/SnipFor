@@ -72,8 +72,8 @@ Current Version: v2.6.9
 
 - **Pro Edition**:
   - Adds HD Screen Video & GIF Recording (60 FPS, multi-monitor, window audio capture).
-  - Lifetime license with automatic updates.
-  - Available at https://snipfor.com
+  - Video Editor, Universal Converter, and Image Studio tools.
+  - Available upon request / demo at https://snipfor.com
 
 - **Audit & Enterprise Edition**:
   - Custom commercial distribution for corporate compliance, MSI packaging, locked configurations, and air-gapped deployments.
