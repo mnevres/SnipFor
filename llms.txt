@@ -2,7 +2,7 @@
 
 > SnipFor is a fast, lightweight, privacy-first screen capture, local OCR, annotation, and screen recording tool for Windows (10 and 11, 64-bit). Built around a strict "Zero Data Leak" architecture: all image processing, text extraction, and video recording happen 100% locally on device. No telemetry, no cloud dependencies, no accounts required.
 
-Current Version: v2.6.9
+Current Version: v2.7.0
 
 ## Core Philosophy: Privacy & Zero Data Leak
 - **100% Offline Processing**: Optical Character Recognition (OCR) and annotations never transmit data over the network.
